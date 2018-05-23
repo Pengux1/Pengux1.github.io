@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-  @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
 * {
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
@@ -32,8 +32,14 @@
 
 .QuizQuestion {
     
-    color:#6495ED !important;
+    font-weight: bold; 
     padding-bottom:10px;
+}
+
+.QuizOption {
+    
+    border-radius: 5px;
+    
 }
 
 .triangle-bg {
@@ -56,14 +62,55 @@
 .page-header {
     padding-bottom:9px;
     margin:40px 0 20px;
-    border-bottom:1px solid #eee
+    border-bottom:1px solid #eee;
 }
 
 .splash-index {
     
-    padding:27vh;
+    padding:30vh;
     background: url(../img/city.png) 0 100% repeat-x;
     
 }
 
+.fat-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 95%;
+}
+
+@media only screen and (min-width: 601px) {
+  .fat-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .fat-container {
+    width: 90%;
+  }
+}
+
+.notes-row {
+    
+    padding-left:10px;
+    padding-right:10px;
+    
+}
+
+.notes-top {
+    
+    padding-top: 10px;
+}
+
+.notes-bottom {
+    
+    padding-bottom: 10px;
+}
+
+padme {
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    
+}
 

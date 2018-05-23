@@ -30,17 +30,53 @@
             
         </div>
         
-        <div class="coloured-triangle-bg valign-wrapper">
-        
-            <div class="container">
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
             
-                <h4>Psychology Quiz</h4>
-            
-            </div>
+            <h4 style="padding-left:1vw;">Psychology Quiz</h4>
             
         </div>
         
         <div class="Quiz">
+            
+            <!-- Start Question Card -->
+<div class='row'>
+<div class='col s12'>
+	<div class='card'>
+        <div class="card-content">
+	<!-- Question Number -->
+	<span class='card-title'>Question 1</span>
+
+	<!-- Question Content -->
+	<p class='QuizQuestion'>Dab?</p>
+	<!-- Start Form -->
+
+	<form action='#' answer='A'>
+		<!-- Option 1 -->
+		<p class='QuizOption'>
+			<label>	
+				<input name='Question1' type='radio'/>
+				<span>On those haters.</span>
+			</label>
+		</p>
+
+	<!-- Option 2 -->
+		<p class='QuizOption'>	<label>	<input name='Question1' type='radio'/><span>On jesus.</span></label></p>
+	<!-- Option 3 -->
+		<p class='QuizOption'>	<label>	<input name='Question1' type='radio'/><span>Kill all</span></label></p>
+	<!-- Option 4 -->
+		<p class='QuizOption'>	<label>	<input name='Question1' type='radio'/><span>echs dee</span></label></p>
+	</form>
+
+	</div>
+
+	</div>
+
+	</div>
+
+</div>
+
+<!-- End Question Card -->
+
         
             <div class="row">
                 
@@ -422,14 +458,14 @@
                         
                         if (button.checked == true) {
                             
-                            //form.parentElement.className = "card-content green";
+                            form.parentElement.parentElement.className = "card teal accent-3";
                             
                             Total += 1;
                             
                             
                         } else {
                             
-                            //form.parentElement.className = "card-content red";
+                            form.parentElement.parentElement.className = "card red accent-1";
                             
                         }
                         
