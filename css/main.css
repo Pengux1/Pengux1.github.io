@@ -79,6 +79,23 @@
     
 }
 
+.V-Helper {
+    
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.V-Img {
+    
+    vertical-align: middle;
+}
+
+
+/*************
+Fat Container
+*************/
+
 .fat-container {
   margin: 0 auto;
   max-width: 1280px;
@@ -97,6 +114,10 @@
   }
 }
 
+/************
+Notes Pages CSS
+************/
+
 .notes-row {
     
     padding-left:10px;
@@ -109,35 +130,55 @@
     padding-top: 10px;
 }
 
-.notes-bottom {
-    
-    padding-bottom: 10px;
-}
-
-a, .Objectives {
-    
-    padding: 5px;
-    color: #686868;
-    
-}
-
-ul, .Objectives {
-    
-    padding: 0px;
-    color: #686868;
-    
-}
-
-a:hover, .Objectives {
-    
-    color: #6495ED
-    
-}
-
 .padme {
     
     padding-top: 1vh;
     padding-bottom: 1vh;
     
+}
+
+@media only screen and (max-width: 444px) {
+  .NotesBreadcrumbs-2 {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 646px) {
+  .NotesBreadcrumbs-3 {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 993px) { 
+    .row.valign-wrapper { display: inherit; 
+    } 
+}
+
+.Notes-Objectives {
+    
+    padding-left: 5px;
+    
+}
+
+.Notes-Objectives li {
+    padding: 0 0 10px 0;
+    list-style-position: inside;
+}
+
+.Notes-Objectives a {
+  color: #757575;
+
+}
+
+.Notes-Objectives li:hover {
+  color: #a8a8a8;
+  padding-left: 5px;
+  border-left: 1px solid #ee6e73;
+}
+
+.Notes-Objectives li.active {
+  font-weight: 500;
+  padding-left: 5px;
+  border-left: 2px solid #ee6e73;
 }
 
