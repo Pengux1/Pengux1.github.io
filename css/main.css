@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
 * {
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
@@ -26,14 +26,20 @@
 
   }
 
-  .note {
+.note {
     color:#6495ED !important;
   }
+
+.bold {
+    
+    font-weight: bold; 
+    
+}
 
 .QuizQuestion {
     
     font-weight: bold; 
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
 .QuizOption {
@@ -66,9 +72,10 @@
 }
 
 .splash-index {
-    
-    padding:30vh;
+
     background: url(../img/city.png) 0 100% repeat-x;
+    height: 90vh;
+    margin: auto;
     
 }
 
@@ -107,7 +114,27 @@
     padding-bottom: 10px;
 }
 
-padme {
+a, .Objectives {
+    
+    padding: 5px;
+    color: #686868;
+    
+}
+
+ul, .Objectives {
+    
+    padding: 0px;
+    color: #686868;
+    
+}
+
+a:hover, .Objectives {
+    
+    color: #6495ED
+    
+}
+
+.padme {
     
     padding-top: 1vh;
     padding-bottom: 1vh;
