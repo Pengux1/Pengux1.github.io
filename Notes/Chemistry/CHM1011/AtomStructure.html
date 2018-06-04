@@ -12,6 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href="/img/ico/favicon.ico">
         <title>Structure of the Atom | Graphics Demo</title>
+        
+        <style>
+        
+            @media only screen and (max-width: 993px) { 
+                .row.valign-wrapper { display: inherit; 
+                } 
+        
+        </style>
+        
     </head>
 
     <body>
@@ -64,17 +73,21 @@
         <br>
         
         <!-- Start Content -->
+        
+        <div class="obese-container z-depth-1">
 
-            <div class="row valign-wrapper">
+            <div class="fat-container">
+                
+                <div class="row valign-wrapper">
             
-                <div class="col s12 l6">
+                <div class="col s5 push-s4 l3 center">
                     
-                    <img class="responsive-img" src="/img/Summary.png">
+                    <img class="responsive-img" src="/img/Summary.png" style="padding:10px 10px 10px 10px;">
 
                 
                 </div>
                 
-                <div class="col s12 l6">
+                <div class="col s12 l5 pull-l1">
                     
                     <h4 class="page-header"><strong>Learning Objectives</strong></h4>
                     
@@ -92,8 +105,12 @@
                     </ul>
                 
                 </div>
+                    
+                </div>
             
             </div>
+            
+        </div>
 
         <!-- Content -->
 
@@ -112,7 +129,7 @@
         <!-- Each topic gets it's own fat container with a z-depth of 1 -->
         <!-- Give the container an id so the topics can anchor to it -->
         
-        <div class="z-depth-1 scrollspy" id="Structure">
+        <div class="obese-container z-depth-1 scrollspy" id="Structure">
             
             <div class="triangle-bg valign-wrapper z-depth-2">
             
@@ -127,14 +144,52 @@
             <br>
             
             <div class="fat-container">
+                
+                <div class="row z-depth-2">
+                    
+                    <div class="col s12">
             
-                <p class="note">DID SOMEONE ASK FOR THE MANDATORY HISTORY LESSON TAUGHT AT THE START OF LITERALLY EVERY CHEMISTRY CLASS???</p>
+                        <p class="note">DID SOMEONE ASK FOR THE MANDATORY HISTORY LESSON TAUGHT AT THE START OF LITERALLY EVERY CHEMISTRY CLASS???</p>
+                        <p class="note">I'm pretty sure there won't be much on this, so I'm pretty much just copying moodle here.</p>
+                        
+                    </div>
+                    
+                </div>
                 
-                <h5 class="page-header"></h5>
+                <h5 class="page-header">Dalton</h5>
                 
-                <h5 class="page-header"></h5>
+                <p>Atoms are the smallest particles of an element that retain the chemical identity of that element; atoms of different elements have different properties.</p>
                 
-                <h5 class="page-header"></h5>
+                <h5 class="page-header">J.J. Thomson</h5>
+                
+                <p>In 1897 J.J. Thomson discovers “cathode rays” in a discharge tube – these rays are a stream of negatively charged particles called electrons. Thomson suddenly measured their charge-to-mass ratio.</p>
+                
+                <p>In 1909 Millikan directly measures the electron’s charge.</p>
+                
+                <h5 class="page-header">Rutherford</h5>
+                
+                <!-- Start Row -->
+                
+                <div class="row valign-wrapper">
+                
+                    <div class="col s12 l6 center">
+                    
+                        <img class="responsive-img" src="/img/Notes/Chemistry/CHM1011/Rutherford.jpg">
+                    
+                    </div>
+                    
+                    
+                    <div class="col s12 l6">
+                        
+                        <p>Rutherford performs a classic experiment in which he fires a beam of α particles at a thin gold foil - most pass straight through but some are back-scattered!</p>
+                    
+                        <p>Rutherford’s conclusion: Most of the mass of the Au atoms and +ve charge resides in an extremely tiny dense “nucleus” – most of the total volume of the atom is empty spaaaaaace in which the electrons move.</p>
+                    
+                    </div>
+                
+                </div>
+                
+                <!-- End Row -->
             
             </div>
             
@@ -144,7 +199,7 @@
         
         <br>
         
-        <div class="z-depth-1 scrollspy" id="AtomNums">
+        <div class="obese-container z-depth-1 scrollspy" id="AtomNums">
             
             <div class="triangle-bg valign-wrapper z-depth-2">
             
@@ -162,7 +217,7 @@
             
                 <div class="row valign-wrapper">
 
-                    <div class="col s12 l6">
+                    <div class="col s12 l6 center">
                         
                         <img class="responsive-img" src="/img/Notes/Chemistry/CHM1011/PerodicElement.jpg">
                     
@@ -180,7 +235,7 @@
 
                         <p>The total number of protons and neutrons in a nucleus.</p>
 
-                        <p class="note">Electrons aren't included in this, as they are so small they have almost no effect on the mass of an atom.</p>
+                        <p class="note">Electrons aren't included in this, as they are so small they have almost no effect on the mass of an atom. Protons and Neutrons have almost the same mass, and are counted as equivilant.</p>
                     
                     </div>
         
@@ -209,8 +264,30 @@
             <br>
             
             <div class="fat-container">
-            
-                <p>Content here plz</p>
+                
+                <div class="row">
+
+                    <div class="col s12 l7 center">
+                        
+                        <a href="https://xkcd.com/273/"><img class="responsive-img" src="/img//Notes/Chemistry/CHM1011/ElectromagneticSpectrumXkcd.png" alt="Picture of Electromagnetic Spectrum."></a>
+                    
+                    </div>
+                        
+                    <div class="col s12 l5">
+                        
+                        <h5 class="page-header">Electromagnetic Radiation</h5>
+                        
+                        <p>Defined by Google as: A kind of radiation including visible light, radio waves, gamma rays, and X-rays, in which atomic and magnetic fields vary simultaneously.</p>
+                    
+                        <p>So, we can see that light being a form of electromagnetic radiation is literally in the definition.</p>
+                        
+                        <p>All electromagnetic radiation travels at the same velocity, which is abused by the formula presented later on.</p>
+                        
+                        <p>The speed of light is 3.00*10^8. (Roughly).</p>
+                    
+                    </div>
+        
+                </div>
             
             </div>
             
@@ -236,7 +313,29 @@
             
             <div class="fat-container">
             
-                <p>Content here plz</p>
+                <h5 class="page-header">Frequency</h5>
+                
+                <p>The number of waves passing though origin point per unit of time.</p>
+                
+                <p>Represented by ν in Hz or s^-1.</p>
+                
+                <h5 class="page-header">Wavelength</h5>
+                
+                <p>The distance from peak to peak.</p>
+                
+                <p>Represented by λ in meters, m.</p>
+                
+                <h5 class="page-header">Amplitude</h5>
+                
+                <p>The difference between the height of the peak and the origin.</p>
+                
+                <h5 class="page-header">Relationship between Frequency and Wavelength</h5>
+                
+                <h4 class="note center">νλ = c</h4>
+                
+                <p class="center">Where ν is Freqeuency, λ is Wavelength, and <strong>c</strong> is the speed of light (3.00*10^8).</p>
+                
+                
             
             </div>
             
