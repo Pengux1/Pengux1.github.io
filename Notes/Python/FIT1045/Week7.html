@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/img/ico/favicon.ico">
+        <title>Week 7 | Graphics Demo</title>
+    </head>
+    
+    <style>
+        
+        @media only screen and (max-width: 993px) { 
+            .row.valign-wrapper { display: inherit; 
+            } 
+
+    </style>
+
+    <body>
+        
+        <div class="navbar-fixed">
+        
+            <nav class="white">
+
+                <div class="nav-wrapper">
+
+                    <div class="row">
+
+                        <div class="col s4 left">
+                    
+                            <div class="brand-logo left">
+                                <a href="/index.html"><img class="responsive-img" src="/img/logo.png"></a>
+                            </div>
+                    
+                        </div>
+
+                        <div class="col s8 right-align NotesBreadcrumbs-3">
+
+                            <a href="/Notes/NotesIndex.html" class="breadcrumb">Notes</a>
+                            <a href="/Notes/Python/PythonIndex.html" class="breadcrumb">Python</a>
+                            
+                            <a class="breadcrumb">Week 7</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            
+        </div>
+        
+        <!-- Title -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Week 7</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Learning Objectives -->
+
+        <div class="obese-container z-depth-1">
+
+            <div class="fat-container">
+                
+                <div class="row valign-wrapper">
+            
+                <div class="col s6 push-s3 l3 center">
+                    
+                    <img class="responsive-img" src="/img/Summary.png" style="padding: 10px">
+                
+                </div>
+                    
+                <div class="col s12 l5 pull-l1">
+                    
+                    <h4 class="page-header"><strong>Learning Objectives</strong></h4>
+                    
+                    <ul class="Notes-Objectives browser-default">
+                        
+                        <li><a href="#Functions">Write functions in Python.</a></li>
+                        
+                        <li><a href="#Mutable">Identify mutable and immutable objects in Python.</a></li>
+                        
+                        <li><a href="#Store">Differentiate between variables and how values are stored in Python.</a></li>
+                        
+                        <li><a href="#DivideConquer">Apply the Divide and Conquer strategies including Binary Search to solve problems.</a></li>
+                        
+                    </ul>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Content</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Each topic gets it's own fat container with a z-depth of 1 -->
+        <!-- Give the container an id so the topics can anchor to it -->
+        
+        <div class="obese-container z-depth-1 scrollspy" id="Functions">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Write functions in Python.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <p>Yo, it's pretty simps. Just define your function using <i>def</i>, then name your function and specify the parameters (If any). This ends up looking like:</p>
+                
+                <p>def Function(Parameter):</p>
+                
+                <p>Then indent and do your code.</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="Mutable">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Identify mutable and immutable objects in Python.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <h4 class="page-header">Mutable Objects</h4>
+                
+                <p>Lists and tables</p>
+                
+                <h4 class="page-header">Immutable Objects</h4>
+                
+                <p>Integers, Boolean, Floats, Strings.</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="Store">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Differentiate between variables and how values are stored in Python.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <p>So, Variables point towards a point in memory which stores a specific value. So when you declare a new variable, you're pretty much storing a new value in memory, and then pointing this variable towards it.</p>
+                
+                <p>This becomes a problem (For Humans) when we set a variable to equal another varaible (Eg. NewVariable = OldVariable). This only does a <i>Shallow Copy</i>, which means that the new variable still points towards the same point in memory as the old one. When the new variable is changed, the old variable will also be changed (and vice-versa). This is mainly a problem when we do something like <i>NewList = OldList * 3</i>, which only performs a shallow copy, meaning when a value is changed in one list, it's changed in all the lists.</p>
+                
+                <p>To get around this, we need to do a <i>Deep Copy</i>, which creates a new region of memory with the same value as the varaible being copied, which the new variable points towards. We can implement this in Python in many different ways, such as: NewList = list(OldList); NewList = OldList[:], and so on.</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="DivideConquer">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Apply the Divide and Conquer strategies including Binary Search to solve problems.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+                
+                <h4 class="page-header">Divide and Conquer</h4>
+            
+                <p>A badass name for a not-so badass strategy. Essentially we <i>Divide</i> a problem into two or more smaller instances, and <i>Conquer</i> these smaller instances by solving them, which are combined to obtain the solution for the problem.</p>
+                
+                <h4 class="page-header">Binary Search</h4>
+            
+                <p>Given a sorted list, we can use a Binary Search to see if an item is contained in the list.</p>
+                
+                <p>So we take the middle index of the list, and see if the item at this position in the list is equal to the search item. If it is, then easy, we just return the middle index.</p>
+                
+                <p>If not, we see if the search term is Higher or Lower than this item. If it's lower, we set the end index of the list to be equal to the middle - 1, and if it's higher than the start index of the list is set to equal the middle + 1. A new middle is calculated from the new values of the start/end indexes of the list, and the process is repeated until the list is empty, or the item is found.</p>
+                
+                <img class="responsive-img center" src="/img/Notes/Python/FIT1045/BinarySearch.png">
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <!-- End Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1 padme">
+        
+            <div class="fat-container">
+            
+                <h3>Resources</h3>
+            
+            </div>
+        
+        </div>
+        
+        <!-- Selector -->
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 center padme">
+            
+            <div class="row">
+
+                <ul class="tabs">
+
+                    <li class="tab col s6"><a class="active" href="#Videos">Videos</a></li>
+
+                    <li class="tab col s6"><a href="#Websites">Websites</a></li>
+
+                </ul>
+
+                <div class="divider"></div>
+                
+            </div>
+        
+            <div id="Videos">
+
+                <ul class="collapsible popout">
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">ondemand_video</i>First</div>
+                        <div class="collapsible-body">
+                        
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">ondemand_video</i>Second</div>
+                        
+                        <div class="collapsible-body">
+                            
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                </ul>
+
+            </div>
+        
+            <div class="fat-container z-depth-1" id="Websites">
+        
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">First Link</p>
+
+                    </div>
+
+                </a>
+
+                <div class="divider"></div>
+
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">Second Link</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+            
+            <br>
+        
+        </div>
+        
+        <br>
+        
+    </body>
+    
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    
+    <script>
+        
+        M.AutoInit();
+    
+    </script>
+    
+</html>

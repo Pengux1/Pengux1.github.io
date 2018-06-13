@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/img/ico/favicon.ico">
+        <title>Week 5 | Graphics Demo</title>
+    </head>
+    
+    <style>
+        
+        @media only screen and (max-width: 993px) { 
+            .row.valign-wrapper { display: inherit; 
+            } 
+
+    </style>
+
+    <body>
+        
+        <div class="navbar-fixed">
+        
+            <nav class="white">
+
+                <div class="nav-wrapper">
+
+                    <div class="row">
+
+                        <div class="col s4 left">
+                    
+                            <div class="brand-logo left">
+                                <a href="/index.html"><img class="responsive-img" src="/img/logo.png"></a>
+                            </div>
+                    
+                        </div>
+
+                        <div class="col s8 right-align NotesBreadcrumbs-3">
+
+                            <a href="/Notes/NotesIndex.html" class="breadcrumb">Notes</a>
+                            <a href="/Notes/Python/PythonIndex.html" class="breadcrumb">Python</a>
+                            
+                            <a class="breadcrumb">Week 5</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            
+        </div>
+        
+        <!-- Title -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Week 5</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Learning Objectives -->
+
+        <div class="obese-container z-depth-1">
+
+            <div class="fat-container">
+                
+                <div class="row valign-wrapper">
+            
+                <div class="col s6 push-s3 l3 center">
+                    
+                    <img class="responsive-img" src="/img/Summary.png" style="padding: 10px">
+                
+                </div>
+                    
+                <div class="col s12 l5 pull-l1">
+                    
+                    <h4 class="page-header"><strong>Learning Objectives</strong></h4>
+                    
+                    <ul class="Notes-Objectives browser-default">
+                        
+                        <li><a href="#BruteForce">Apply the Brute Force approach including exhaustive search.</a></li>
+                        
+                        <li><a href="#Bitlists">Represent solutions to problems as bitlists.</a></li>
+                        
+                    </ul>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Content</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Each topic gets it's own fat container with a z-depth of 1 -->
+        <!-- Give the container an id so the topics can anchor to it -->
+        
+        <div class="obese-container z-depth-1 scrollspy" id="BruteForce">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Apply the Brute Force approach including exhaustive search.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <p>Brute Force algorithms go through each possibility to find the optimal solution.</p>
+                
+                <p>This almost always gives the optimal solution, but it's very inefficient and often the time the algorithm takes to complete increases expontentially with the sample size.</p>
+                
+                <p>An exhaustive search is literally going through each item in a list and comparing it to a search item.</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="Bitlists">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Represent solutions to problems as bitlists.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <p class="flow-text note">Ew, Bitlists.</p>
+                
+                <h4 class="page-header">Bitlists</h4>
+                
+                <p>You can represent a subset of a set by a list of bits (or a string of bits).</p>
+                
+                <p>So the subset of the integers (0-19), {5,2,13,1,8,3} can be represented by:</p>
+                
+                <p>[0,  1,  1,  1,  0,  1,  0,  0,  1,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0]</p>
+                <p>Where the index of the list represents the number.</p>
+                
+                
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <!-- End Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1 padme">
+        
+            <div class="fat-container">
+            
+                <h3>Resources</h3>
+            
+            </div>
+        
+        </div>
+        
+        <!-- Selector -->
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 center padme">
+            
+            <div class="row">
+
+                <ul class="tabs">
+
+                    <li class="tab col s6"><a class="active" href="#Videos">Videos</a></li>
+
+                    <li class="tab col s6"><a href="#Websites">Websites</a></li>
+
+                </ul>
+
+                <div class="divider"></div>
+                
+            </div>
+        
+            <div id="Videos">
+
+                <ul class="collapsible popout">
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">ondemand_video</i>First</div>
+                        <div class="collapsible-body">
+                        
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">ondemand_video</i>Second</div>
+                        
+                        <div class="collapsible-body">
+                            
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                </ul>
+
+            </div>
+        
+            <div class="fat-container z-depth-1" id="Websites">
+        
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">First Link</p>
+
+                    </div>
+
+                </a>
+
+                <div class="divider"></div>
+
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">Second Link</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+            
+            <br>
+        
+        </div>
+        
+        <br>
+        
+    </body>
+    
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    
+    <script>
+        
+        M.AutoInit();
+    
+    </script>
+    
+</html>

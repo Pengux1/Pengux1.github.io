@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/img/ico/favicon.ico">
+        <title>Week 8 | Graphics Demo</title>
+    </head>
+    
+    <style>
+        
+        @media only screen and (max-width: 993px) { 
+            .row.valign-wrapper { display: inherit; 
+            } 
+
+    </style>
+
+    <body>
+        
+        <div class="navbar-fixed">
+        
+            <nav class="white">
+
+                <div class="nav-wrapper">
+
+                    <div class="row">
+
+                        <div class="col s4 left">
+                    
+                            <div class="brand-logo left">
+                                <a href="/index.html"><img class="responsive-img" src="/img/logo.png"></a>
+                            </div>
+                    
+                        </div>
+
+                        <div class="col s8 right-align NotesBreadcrumbs-3">
+
+                            <a href="/Notes/NotesIndex.html" class="breadcrumb">Notes</a>
+                            <a href="/Notes/Python/PythonIndex.html" class="breadcrumb">Python</a>
+                            
+                            <a class="breadcrumb">Week 8</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            
+        </div>
+        
+        <!-- Title -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Week 8</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Learning Objectives -->
+
+        <div class="obese-container z-depth-1">
+
+            <div class="fat-container">
+                
+                <div class="row valign-wrapper">
+            
+                <div class="col s6 push-s3 l3 center">
+                    
+                    <img class="responsive-img" src="/img/Summary.png" style="padding: 10px">
+                
+                </div>
+                    
+                <div class="col s12 l5 pull-l1">
+                    
+                    <h4 class="page-header"><strong>Learning Objectives</strong></h4>
+                    
+                    <ul class="Notes-Objectives browser-default">
+                        
+                        <li><a href="#RecursionProblems">Explain how recursion can be used to solve problems.</a></li>
+                        
+                        <li><a href="#RecursionApply">Apply recursion in Python.</a></li>
+                        
+                        <li><a href="#Stacks">Define stack data structure.</a></li>
+                        
+                        <li><a href="#StackRecursion">Explain how a stack can be used to implement recursion.</a></li>
+                        
+                    </ul>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Content</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Each topic gets it's own fat container with a z-depth of 1 -->
+        <!-- Give the container an id so the topics can anchor to it -->
+        
+        <div class="obese-container z-depth-1 scrollspy" id="RecursionProblems">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Explain how recursion can be used to solve problems.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <!-- Start Row -->
+
+                <div class="row valign-wrapper">
+
+                    <div class="col s12 l6">
+
+                        <img class="responsive-img center z-depth-2" src="/img/Notes/Python/FIT1045/recursion.gif">
+
+                    </div>
+
+
+                    <div class="col s12 l6">
+
+                        <h4 class="page-header">Recursion</h4>
+                        
+                        <p>Essentially breaking down a problem into smaller parts by having a function call itself.</p>
+                        
+                        <p>We need a base case to tell the function to stop calling itself, otherwise the program will crash.</p>
+                        
+                        <p>Recursion is very fun and you should always use it if possible.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- End Row -->
+
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="RecursionApply">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Apply recursion in Python.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <h4 class="page-header">Applying Recursion</h4>
+            
+                <p>So imagine a function defined by: <i>def CountToN(n):</i></p>
+                
+                <p>Inside the function, we simply do <i>if n > 0: print(CountToN(n-1)), else: return 0</i></p>
+                
+                <p>This function goes calls itself until it reaches zero, then returns zero. This then goes up a level, printing out 0, 1, 2, 3, 4, ..., n-1.</p>
+                
+                <p>For an example, <a href="https://drive.google.com/open?id=1ZzceDbd8UeaxUShT8ECTUX2y93A2RTI0">this</a> is a Recurisive Binary Search algorithm I wrote for funsies. Marvel at my amazing code plz.</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="Stacks">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Define stack data structure.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+                
+                <h4 class="page-header">Stacks</h4>
+            
+                <p>A stack is like a list, except you can <strong>only</strong> interact with the item at the 'top'. You can 'push' something to put it on the top of the stack, and 'pop' to take something from the top of the stack.</p>
+                
+                <p>This behaviour is commonly referred to as Last In First Out.</p>
+                
+                <p>Stacks are often used to reverse a list of items, or to turn a recursive algorithm into an iterative one, as well as memory allocation.</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 scrollspy" id="StackRecursion">
+            
+            <div class="triangle-bg valign-wrapper z-depth-2">
+            
+                <div class="fat-container">
+                
+                    <h4 class="flow-text">Explain how a stack can be used to implement recursion.</h4>
+                
+                </div>
+                
+            </div>
+            
+            <br>
+            
+            <div class="fat-container">
+            
+                <p>I'm not entirely sure why you would. I guess a stack is pretty much a recursive algorithm in data structure form. To work with a stack, we pop values until we get to the bottom (Base Case), then work up from there?</p>
+            
+            </div>
+            
+            <br>
+            
+        </div>
+        
+        <br>
+        
+        <!-- End Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1 padme">
+        
+            <div class="fat-container">
+            
+                <h3>Resources</h3>
+            
+            </div>
+        
+        </div>
+        
+        <!-- Selector -->
+        
+        <br>
+        
+        <div class="obese-container z-depth-1 center padme">
+            
+            <div class="row">
+
+                <ul class="tabs">
+
+                    <li class="tab col s6"><a class="active" href="#Videos">Videos</a></li>
+
+                    <li class="tab col s6"><a href="#Websites">Websites</a></li>
+
+                </ul>
+
+                <div class="divider"></div>
+                
+            </div>
+        
+            <div id="Videos">
+
+                <ul class="collapsible popout">
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">ondemand_video</i>First</div>
+                        <div class="collapsible-body">
+                        
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">ondemand_video</i>Second</div>
+                        
+                        <div class="collapsible-body">
+                            
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                </ul>
+
+            </div>
+        
+            <div class="fat-container z-depth-1" id="Websites">
+        
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">First Link</p>
+
+                    </div>
+
+                </a>
+
+                <div class="divider"></div>
+
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">Second Link</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+            
+            <br>
+        
+        </div>
+        
+        <br>
+        
+    </body>
+    
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    
+    <script>
+        
+        M.AutoInit();
+    
+    </script>
+    
+</html>

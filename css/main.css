@@ -21,6 +21,10 @@
     height: 100%;
   }
 
+i {
+    color:#6495ED !important;
+}
+
   .question {
 	  color:#8B0000;
 
