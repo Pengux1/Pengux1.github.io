@@ -138,9 +138,10 @@ Notes Pages CSS
 
 .LearningObjectives {
     
-    background: url(../img/city.png) 0 100% repeat-x;
-    margin: auto;
-    height: 70vh;
+    background: url(../img/city.png) 100% 100% repeat-x;
+    height: 100%;
+    
+    padding: 5vh 0 5vh 0;
     
 }
 
