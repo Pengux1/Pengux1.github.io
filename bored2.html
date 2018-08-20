@@ -73,14 +73,14 @@
         
         window.addEventListener("load", function(event) {
             
-            UrlWord = window.location.href.split("#")[1];
+            UrlWord =decodeURI(window.location.href).split("#")[1];
             
             if (UrlWord != undefined) {
                 
                 document.getElementById("textarea1").value = UrlWord;
-            
+
                 M.updateTextFields();
-                
+
                 words()
                 
             }
