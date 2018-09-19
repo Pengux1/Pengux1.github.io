@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/img/ico/favicon.ico">
+        <title>Social Psychology | Graphics Demo</title>
+        
+        <style>
+
+            @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+            @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+            * {
+                -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+                color-adjust: exact !important;                 /*Firefox*/
+                color: lightgrey;
+            }
+
+              body {
+                background: #424242;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+              }
+
+              html {
+                height: 100%;
+                
+              }
+
+            i {
+                color:#6495ED !important;
+            }
+
+            strong {
+                color:#6495ED !important;
+            }
+
+              .question {
+                  color:#8B0000;
+
+              }
+
+            .note {
+                color:#6495ED !important;
+              }
+
+            .bold {
+
+                font-weight: bold; 
+
+            }
+
+            .QuizQuestion {
+
+                font-weight: bold; 
+                padding-bottom: 10px;
+            }
+
+            .QuizOption {
+
+                border-radius: 5px;
+
+            }
+
+            .triangle-bg {
+            background-image: url(../img/grey-triangles-darkmode.png);
+              background-repeat: repeat-x;
+              height: 157px;
+              background-position: center;
+              width: 100%;
+            }
+
+            .coloured-triangle-bg {
+              background-image: url(../img/coloured-triangles.png) !important;;
+              background-repeat: repeat-x;
+              height: 157px;
+              background-position: center;
+              width: 100%;
+            }
+
+            .page-header {
+                padding-bottom:9px;
+                margin:40px 0 20px;
+                border-bottom:1px solid #eee;
+            }
+
+            .splash-index {
+
+                background: url(../img/city.png) 0 100% repeat-x;
+                height: 90vh;
+                margin: auto;
+
+            }
+
+
+            /*************
+            Fat Container
+            *************/
+
+            .fat-container {
+              margin: 0 auto;
+              max-width: 95vw;
+              width: 95%;
+            }
+
+            @media only screen and (min-width: 601px) {
+              .fat-container {
+                width: 90%;
+              }
+            }
+
+            @media only screen and (min-width: 993px) {
+              .fat-container {
+                width: 90%;
+              }
+            }
+
+            /*************
+            Obese Container
+            *************/
+
+            .obese-container {
+              margin: 0 auto;
+              max-width: 98vw;
+              width: 95%;
+            }
+
+            @media only screen and (min-width: 601px) {
+              .obese-container {
+                width: 97%;
+              }
+            }
+
+            @media only screen and (min-width: 993px) {
+              .obese-container {
+                width: 98%;
+              }
+            }
+
+            /************
+            Notes Pages CSS
+            ************/
+
+            .LearningObjectives {
+
+                background: url(../img/city-darkmode.png) 100% 100% repeat-x;
+                height: 100%;
+                padding: 5vh 0 5vh 0;
+                position: relative;
+
+            }
+
+            .notes-row {
+
+                padding-left:10px;
+                padding-right:10px;
+
+            }
+
+            .notes-top {
+
+                padding-top: 10px;
+            }
+
+            .padme {
+
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+
+            }
+
+            @media only screen and (max-width: 444px) {
+              .NotesBreadcrumbs-2 {
+                display: none !important;
+              }
+            }
+
+            @media only screen and (max-width: 646px) {
+              .NotesBreadcrumbs-3 {
+                display: none !important;
+              }
+            }
+
+            /**@media only screen and (max-width: 993px) { 
+                .row.valign-wrapper { display: inherit; 
+                } 
+            }**/
+
+            .Notes-Objectives {
+
+                padding-left: 5px;
+
+            }
+
+            .Notes-Objectives li {
+                padding: 0 0 10px 0;
+                list-style-position: inside;
+            }
+
+            .Notes-Objectives a {
+              color: lightgrey;
+
+            }
+
+            .Notes-Objectives li:hover {
+              color: #a8a8a8;
+              padding-left: 5px;
+              border-left: 1px solid #ee6e73;
+            }
+
+            .Notes-Objectives li.active {
+              font-weight: 500;
+              padding-left: 5px;
+              border-left: 2px solid #ee6e73;
+            }
+
+
+
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <div class="navbar-fixed">
+        
+            <nav class="grey darken-3">
+
+                <div class="nav-wrapper">
+
+                    <div class="row">
+
+                        <div class="col s4 left">
+                    
+                            <div class="brand-logo left">
+                                <a href="/index.html"><img class="responsive-img" src="/img/logo.png"></a>
+                            </div>
+                    
+                        </div>
+
+                        <div class="col s8 right-align NotesBreadcrumbs-3 ">
+
+                            <a href="/Notes/NotesIndex.html" class="breadcrumb grey-text text-lighten-1 ">Notes</a>
+                            <a href="/Notes/Psychology/PsychologyIndex.html" class="breadcrumb grey-text text-lighten-1">Psychology</a>
+                            
+                            <a class="breadcrumb grey-text text-lighten-1">Social Psychology</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            
+        </div>
+        
+        <!-- Title -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+        
+            <div class="fat-container">
+            
+                <h3>Social Psychology</h3>
+            
+            </div>
+        
+        </div>
+        
+        <br>
+        
+        <!-- Learning Objectives -->
+        
+        <div class="obese-container z-depth-1 center">
+            
+            <div class="row">
+
+                <ul class="tabs grey darken-2">
+
+                    <li class="tab col s6"><a class="active grey-text text-lighten-2" href="#Lecture1">Lecture 1</a></li>
+
+                    <li class="tab col s6"><a href="#Lecture2" class="grey-text text-lighten-2">Lecture 2</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        
+        <div class="divider fat-container"></div>
+        
+        <!-- Lecture 1 -->
+        
+        <div id="Lecture1">
+        
+            <div class="LearningObjectives">
+
+                <div class="container">
+
+                    <h4 class="page-header center">Learning Objectives</h4>
+
+                    <div class="container">
+
+                        <ul class="Notes-Objectives browser-default">
+                            
+                            <li><a href="#Define">Define Social Psychology and identify the ways in which social situations influence the behaviour of individuals.</a></li>
+                            
+                            <li><a href="#Attitudes">Describe attitudes and behaviour.</a></li>
+                            
+                            <li><a href="#Attribution">Outline theories of attribution – Fundamental attribution error and discuss sources of attributions.</a></li>
+                            
+                            <li><a href="#Prejudice">Understand prejudice and discrimination and their real world implications.</a></li>
+                            
+                            <li><a href="#Deindividuation">Understand the concept of deindividuation and it’s consequences.</a></li>
+                            
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Content -->
+
+            <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+
+                <div class="fat-container">
+
+                    <h3>Content</h3>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- Each topic gets it's own fat container with a z-depth of 1 -->
+            <!-- Give the container an id so the topics can anchor to it -->
+
+            <div class="z-depth-1 scrollspy obese-container" id="Define">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Define Social Psychology and identify the ways in which social situations influence the behaviour of individuals.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+                        
+                        <div class="row z-depth-2">
+                            
+                            <div class="padme">
+                        
+                                <div class="col l6 m12 s12 center">
+
+                                    <img class="responsive-img z-depth-3" src="/img/Notes/Psychology/connectfour.jpg">
+
+                                </div>
+
+                                <div class="col l6 m12 s12">
+
+                                    <h4 class="page-header">Social Psychology</h4>
+
+                                    <p>Social Psychology is defined as the discipline that uses scientific methods "to understand and explain how the thought, feeling and behavior of individuals are influenced by the actual, imagined or implied presence of other human beings."</p>
+
+                                    <p>Brains are predisposed to forming intimate personal networks.</p>
+
+                                    <p>About 150 close relationships is the typical limit.</p>
+
+                                    <p>Humans have a biological need for interpersonal bonds, so much so that depriving an infant of social contact will severely impair its development.</p>
+
+                                    <p>For most people, lack of social contact can lead to mental health issues, including but not limited to: Depression, Anxiety, Addiction and more. So basically:</p>
+
+                                    <p>Belonging and being socially accepted are fundamental for human beings.</p>
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                            
+
+                        <h4 class="page-header">Social Facilitation</h4>
+
+                        <p>Social Facilitation is defined as:</p>
+
+                        <p><strong>Enhancement of performance brought about by the presence of others (occurs only with easy tasks).</strong></p>
+
+                        <p>Social Disruption is basically the opposite of Social Facilitation, defined as:</p>
+
+                        <p><strong>Worsening of behaviour in front of otherse (Occurs with Difficult Tasks).</strong></p>
+
+                        <h4 class="page-header">Social Comparison Theory</h4>
+
+                        <p>In life, we try to compare ourselves to others. This is done in two ways according to this theory:</p>
+
+                        <p><strong>Upward</strong> - We compare ourselves to people superior to us.</p>
+
+                        <p>Highly motivated people: upward communication?</p>
+
+                        <p><strong>Downward</strong> - We compare ourselves to people inferior to us.</p>
+
+                        <p>Active is comparing with someone worse off, Passive is demeaning others, causing harm.</p>
+
+                        <p class="note">This is given with no context, I'll try to properly put it down later.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+            
+            <div class="z-depth-1 scrollspy obese-container" id="Attitudes">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Describe attitudes and behaviour.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h4 class="page-header">Attitudes</h4>
+                
+                        <p>A psychological tendency that is expressed by evaluating a particular entity with some degree of favour or disfavour.</p>
+
+                        <p>Yo, they have three components, ABC - Affective (Emoitions), Behavioural and Cognition.</p>
+
+                        <p>Bla bla bla your attitudes can have genetic issues but they basically come from social learning and your personality.</p>
+
+                        <p>Then there's the Recognition Heuristic where the goal is to make inferences about a criterion that is not directly accessible to the decision maker, based on recognition retrieved from memory. So we draw attitudes from past experience.</p>
+
+                        <h4 class="page-header">Attitude Change</h4>
+
+                        <p class="note">These slides are just a real pile of shit. Future Same, please go and make these not a pile of garbage.</p>
+
+                        <p>Persuasive Communication</p>
+
+                        <p>Who is the communicator?</p>
+
+                        <p>Experts, populat and attractive people, speech rate</p>
+
+                        <p>What is the message? manipulation, fear</p>
+
+                        <p>Who is the audience? Self esteem, age, gender, individual differences.</p>
+
+                        <p>Dual Processing Model Routes: Central Route (more convincing), Peripheral Route (low level arguments).</p>
+
+                        <h4 class="page-header">The Elboration Likelihood Model</h4>
+
+                        <p class="note">I don't even know the relevance of this one</p>
+
+                        <img class="responsive-img" src="/img/Notes/Psychology/ElaborationLikelihood.png">
+
+                        <h4 class="page-header">Cognitive Dissonance Theory</h4>
+
+                        <p>We have an inner drive to hold all our attitudes and beliefs in harmony and avoid disharmony (or dissonance). If there are inconsistencies, we try to rationalise them to reduce psychological discomfort.</p>
+
+                        <h4 class="page-header">Self Perception Theory</h4>
+
+                        <p>When people are unsure about their feelings and motivations, they will use their own behaviour to infer what they feel.</p>
+
+                        <p>We sometimes use our own behaviour to guess about what we are feeling. Happens when: Our initial feelings are unclear.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+            
+            <div class="z-depth-1 scrollspy obese-container" id="Attribution">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Outline theories of attribution – Fundamental attribution error and discuss sources of attributions.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h4 class="page-header">Attributions</h4>
+            
+                        <p>Attributions are your attempt at understanding your experiences, behaviours, and the behaviour of others.</p>
+
+                        <p><strong>Internal Attribution</strong> is behaviour explained due to personal factors like traits, attitudes, feelings, etc.</p>
+
+                        <p><strong>External Attribution</strong> is behaviour explained due to situational factors.</p>
+
+                        <h4 class="page-header">The Fundamental Attribution Error</h4>
+
+                        <p>This is defined as: The tendency to overestimate the the contribution of lasting traits and dispositions in determining people's behavior, as compared to situational effects. We might see someone kicking a vending machine, and conclude they're an inherently angry person. But maybe they just failed a test, had their driving license revoked, and had the machine eat their money for the third time this week. We think of the other person as an evil mutant and ourselves as righteous actors.</p>
+
+                        <p>Basically, we assume other peoples actions are because of their personality rather than because of their personal situation.</p>
+
+                        <h4 class="page-header">Actor-Observer Effect</h4>
+
+                        <p>A tendency to attribute one's own actions to external causes while attributing other people's behaviors to internal causes. It is a type of attributional bias that plays a role in how we perceive and interact with other people.</p>
+                        
+                        <div class="center">
+
+                            <img class="responsive-img z-depth-2" src="/img/Notes/Psychology/calvinattribution.png">
+                            
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+            
+            <div class="z-depth-1 scrollspy obese-container" id="Prejudice">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Understand prejudice and discrimination and their real world implications.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h4 class="page-header">Prejudice</h4>
+                
+                        <p>Stereotype - Shortcut: A belief about a group’s characteristic that we apply to most members of that group.</p>
+
+
+                        <p>Seed of prejudice -> <i>Ultimate</i> Attribution Error -> Attributing the negative behaviour of entire groups to their dispositions.</p>
+
+                        <p>Prejudice - Negative Attitudes - Pre-judging</p>
+
+                        <p>Adaptive conservatism</p>
+
+                        <p>In-group bias: Tendency to favour individuals inside our group relative to members outside our group</p>
+
+                        <p>Out-group homogeneity: Tendency to view all people outside our group as highly similar -> easy to dismiss.</p>
+
+                        <h4 class="page-header">Theories of Prejudice</h4>
+
+                        <p><strong>Motivational Theories</strong> - Motivational Theories - Authoritarianism personality trait. Acceptance of traditional values, blindly follow orders from authority, be prejudiced against others who are different.</p>
+
+                        <p><strong>Cognitive Theories</strong> - The way in which people deal with the world - use of schemas - helps us draw proper conclusions about people, but can sometimes be wrong.</p>
+
+                        <p><strong>Learning Theories</strong> - Prejudice is learned through conflicts, observing, listening to others, biopreparedness - natural fear of strangers who are different to us.</p>
+
+                        <h4 class="page-header">Types of Prejudice</h4>
+
+                        <p>Racism, Sexism, Religious Prejudice, Homophobia, Minority Prejudice</p>
+
+                        <p>Basically if it exists, there exists a person who hates it with a flaming passion.</p>
+
+                        <h4 class="page-header">Reducing Prejudice</h4>
+
+                        <p>Contact Hypothesis - Stereotypes and prejudice will diminish as contacts between groups increase - Roughly equal social and economic status, Authorities promote cooperation, interdependence, One-to-one contact between groups’ members, Members of each group must be seen as typical and not unusual.</p>
+
+                        <p class="note">Please to future Same to make this not bad thanxs luv u long time!!!</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+            
+            <div class="z-depth-1 scrollspy obese-container" id="">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Understand the concept of deindividuation and it’s consequences.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h4 class="page-header">Deindividuation</h4>
+                
+                        <p>The tendency of people to engage in atypical behaviour when stripped of their usual identities: Feeling of Anonymity, Lack of Individual Responsibility.</p>
+
+                        <p>We become more vulnerable to: Social Influences (Conformity, Obedience), Social Roles.</p>
+
+                        <p>Risk of losing our typical identities, becoming irrational.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+        
+        </div>
+        
+        <!-- Lecture 2 -->
+        
+        <div id="Lecture2">
+        
+            <div class="LearningObjectives">
+
+                <div class="container">
+
+                    <h4 class="page-header center">Learning Objectives</h4>
+
+                    <div class="container">
+
+                        <ul class="Notes-Objectives browser-default">
+                            
+                            <li><a href="#Attraction">Outline the theories of interpersonal attraction.</a></li>
+                            
+                            <li><a href="#Conformity">Determine the factors that influence when we conform, obey and comply with others.</a></li>
+                            
+                            <li><a href="#Obedience">Identify the factors that maximise or minimise obedience to authority.</a></li>
+                            
+                            <li><a href="#Milgram">Evaluate Milgram’s study and it’s ethical considerations.</a></li>
+                            
+                            <li><a href="#Aggression">Describe the social and individual variables that contribute to human aggression.</a></li>
+                            
+                            <li><a href="#Altruism">Understand the concepts of altruism and pro-social behaviour.</a></li>
+                            
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Content -->
+
+            <div class="coloured-triangle-bg valign-wrapper z-depth-1">
+
+                <div class="fat-container">
+
+                    <h3>Content</h3>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- Each topic gets it's own fat container with a z-depth of 1 -->
+            <!-- Give the container an id so the topics can anchor to it -->
+
+            <div class="z-depth-1 scrollspy obese-container" id="Attraction">
+            
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text"> Outline the theories of interpersonal attraction.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <ul class="collection with-header z-depth-2">
+
+                            <li class="collection-header grey darken-2"><h4>Causes of Attraction</h4></li>
+                            <li class="collection-item grey darken-1">Physical Proximity (Enviroment)</li>
+                            <li class="collection-item grey darken-1">Mere Exposure Effect</li>
+                            <li class="collection-item grey darken-1">Similarity</li>
+                            <li class="collection-item grey darken-1">Circumstances of First Meeting</li>
+
+                        </ul>
+
+                        <h5 class="page-header">Balanced and Imbalanced Relationships</h5>
+
+                        <p>Balance exists if you like a person you are associated with, or dislike a person you are not associated with. Imbalance exists when you dislike a person you are associated with, or like a person you are not associated with.</p>
+
+                        <p class="note">What even? So both parties need to like each other for it to be a relationship? Wha?</p>
+
+                        <h5 class="page-header">Physical Attractiveness</h5>
+
+                        <p><strong>Matching Hypothesis</strong> - People tend to form relationships with those who are similar to themselves in physical attractiveness.</p>
+
+                        <h5 class="page-header">Evolutionary Perspective</h5>
+
+                        <p>What we find attractive is pre-historically determined. So women prefer to mate with men who would be good fathers and be good prociders; while men prefer to mate with women who could bear healthy babies.</p>
+
+                        <h5 class="page-header">Intimate Relationships and Love</h5>
+
+                        <p><strong>Interdependence</strong> - Each partner's thoughts, actions and behaviour affects the other.</p>
+
+                        <p><strong>Commitment</strong> - Psychological attachment to the relationship; involves trust, honesty, etc.</p>
+
+                        <p><strong>Co-Dependent Relationship</strong> - They put aside their own well-being to maintain a relationship with another.</p>
+
+                        <p><strong>Independent Relationship</strong> - Both remain independent in the relationship?</p>
+
+                        <h5 class="page-header">Sternberg's Triangular Theory of Love</h5>
+
+                        <p>Three basic components - Passion, Intimacy, Commitment.</p>
+
+                        <ul class="collection with-header z-depth-2">
+
+                            <li class="collection-header grey darken-2"><h4>With their powers combined, they can form:</h4></li>
+                            <li class="collection-item grey darken-1">Consummate love: Passion + Intimacy + Commitment (long term partnership based on a blissful connection between partners).</li>
+                            <li class="collection-item grey darken-1">Companionate love: Intimacy + Commitment (mellow phase in a relationship).</li>
+                            <li class="collection-item grey darken-1">Romantic love: Passion + Intimacy (more focused on ‘now’ rather than the future).</li>
+                            <li class="collection-item grey darken-1">Fatuous love: Commitment + Passion (e.g., many celebrity marriages).</li>
+
+                        </ul>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+
+            <div class="z-depth-1 scrollspy obese-container" id="Conformity">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Determine the factors that influence when we conform, obey and comply with others.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <div class="row">
+
+                            <div class="col s12">
+
+                                <div class="card grey darken-1">
+
+                                    <div class="card-content">
+
+                                        <span class="card-title">Asch's Conformity Experiment</span>
+
+                                        <p>A participant walks into a room with people seated around the table, who unbeknownst to the participant are paid actors. They are then presented with a piece of paper with three lines on it, one visibly larger than the others. They are then, one by one, asked which line they think is bigger. The paid actors however, gave the wrong answer.</p>
+
+                                        <p>So basically, a disturbing amount of people conformed with the actors answers, and gave the wrong answer.</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <h5 class="page-header">When do People Conform?</h5>
+
+                        <p>Ambiguity of situation, Unanimity and size of majority (Social Impact Theory), Gender, other members of the group are higher in social status.</p>
+
+                        <p>Conformity decreases when people are able to respond privately.</p>
+
+                        <h5 class="page-header">Why do people conform?</h5>
+
+                        <p class="note">Why not?</p>
+
+                        <p>Two types of conformity - Public and Private.</p>
+
+                        <p><strong>Public</strong> occurs when people truly believe that the group is right.</p>
+
+                        <p><strong>Private</strong> occurs when we are pressured and feel we do not have a choice other than to conform to group norms.</p>
+
+                        <h5 class="page-header">Compliance</h5>
+
+                        <p>Change due to a request.</p>
+
+                        <p><strong>Foot-in-the-door technique</strong> - First make a small request, and then move to a bigger one; will only work if the bigger request is consistent with the smaller one.</p>
+
+                        <p><strong>Door-in-the-face technique</strong> - Start with a big request, and then make a smaller one; will work only if the same person makes the request which is consistent with the initial one.</p>
+
+                        <p><strong>Low-ball technique</strong> - First make a person agree, and then increase your terms; works due to commitment as at first the person has already said ‘yes’.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+
+            <div class="z-depth-1 scrollspy obese-container" id="Obedience">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Identify the factors that maximise or minimise obedience to authority.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h5 class="page-header">Obedience</h5>
+
+                        <p>Behaviour change in response to a demand from an authority. Group influence springs from our leaders.</p>
+
+                        <ul class="collection with-header z-depth-2">
+
+                            <li class="collection-header grey darken-2"><h4>Factors Influencing Obedience</h4></li>
+                            <li class="collection-item grey darken-1">Experimenter status and prestige.</li>
+                            <li class="collection-item grey darken-1">Behaviour of others.</li>
+                            <li class="collection-item grey darken-1">Behaviour of the learner.</li>
+                            <li class="collection-item grey darken-1">Personality characteristics (Authoritarianism and Empathy).</li>
+
+                        </ul>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+
+            <div class="z-depth-1 scrollspy obese-container" id="Milgram">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Evaluate Milgram’s study and it’s ethical considerations.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <p>So an actor is in a room with fake electrodes attached to them. The participant is brought in to a seperate room, and told that they're performing an experiment judging the effects of punishment on learning. They were instructed to give an electric shock every time the actor got a question wrong, and to increase the voltage each time. The actor obviously wasn't being shocked, but they acted as if they were.</p>
+
+                        <p>As the voltage increased, the actor started to plead that the participant stop, and would scream and cry in distress. However, the experimenter would continue to tell them to give the shocks and increase the voltage. About two thirds of particpants continued to increase the voltage until it reached a level which would have killed the actor.</p>
+
+                        <p>This experiment shows that a majority of people would kill someone or otherwise do something horrible if told to do so by an authority figure.</p>
+
+                        <h5 class="page-header">Deindividuation</h5>
+
+                        <p>The tendency of people to engage in atypical behaviour when stripped of their usual identities (Feeling of anonymity and lack of individual responsibility).</p>
+
+                        <p>When this happens we become more vulnerable to social influences (Conformity and Obedience) and Social Roles (Very scary).</p>
+
+                        <p>When this happens we risk losing our typical identities and become irrational.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+
+            <div class="z-depth-1 scrollspy obese-container" id="Aggression">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Describe the social and individual variables that contribute to human aggression.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h5 class="page-header">Agression</h5>
+
+                        <p>Behaviour intended to harm others – physical, verbal or mental.</p>
+
+                        <ul class="collection with-header z-depth-2">
+
+                            <li class="collection-header grey darken-2"><h4>Situational Influences on Aggression</h4></li>
+                            <li class="collection-item grey darken-1">Interpersonal Provocation</li>
+                            <li class="collection-item grey darken-1">Fustration</li>
+                            <li class="collection-item grey darken-1">Alcohol / Drugs</li>
+                            <li class="collection-item grey darken-1">Temperature</li>
+                            <li class="collection-item grey darken-1">Media Influences</li>
+                            <li class="collection-item grey darken-1">Aggressive cues</li>
+                            <li class="collection-item grey darken-1">Arousal</li>
+
+                        </ul>
+
+                        <h5 class="page-header">Individual, gender and cultural differences.</h5>
+
+                        <p><strong>Personality</strong> - Irritability, mistrust, impulsivity, lack of closeness.</p>
+
+                        <p><strong>Sex Differences</strong> - Direct vs. Relational (e.g., “the silent treatment”).</p>
+
+                        <p><strong>Cultural Differences</strong> - Culture of Honour.</p>
+
+                        <h5 class="page-header">Types of Agression</h5>
+
+                        <p><strong>Hostile / Impulsive Aggression</strong> - Violent attitudes or actions, behaviour that cannot be controlled and aimed at hurting others.</p>
+
+                        <p><strong>Instrumental Aggression</strong> - Aggressive behaviour to achieve a goal, means to a goal.</p>
+
+                        <h5 class="page-header">The Frustration Aggression Hypothesis</h5>
+
+                        <p>Bla bla bla kids that are fustrated will destroy toys.</p>
+
+                        <h5 class="page-header">Excitation Transfer Model</h5>
+
+                        <p>Arousal transfers from one situation to another and promotes the likelihood of aggression. Physiological arousal dissipates slowly.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+
+            <div class="z-depth-1 scrollspy obese-container" id="Altruism">
+
+                <div class="row">
+
+                    <div class="triangle-bg valign-wrapper z-depth-2">
+
+                        <div class="fat-container">
+
+                            <h4 class="flow-text">Understand the concepts of altruism and pro-social behaviour.</h4>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="fat-container">
+
+                        <h5 class="page-header">Prosocial Behaviour</h5>
+
+                        <p><strong>Altruism</strong> - An unselfish concern for another's welfare.</p>
+
+                        <p><strong>Helping behaviour</strong> - Any act that is intended to benefit another person.</p>
+
+                        <p class="note">There's also an empathy-altruism theory so put infos in l8r Future Same.</p>
+
+                        <h5 class="page-header">Why do people help?</h5>
+
+                        <p>Personaity of the helper: Empathy.</p>
+
+                        <p><strong>Situational Influences</strong> - characteristics of the victim, no easy escape, exposure to helpful role models, mood, being in a hurry.</p>
+
+                        <p><strong>Enlightenment Effect</strong> - public knowledge about psychological research can change the world.</p>
+
+                        <h5 class="page-header">Cost-Reward Theory</h5>
+
+                        <p>Helping reduces the unpleasant arousal felt when confronted with suffering.</p>
+
+                        <p>3 stages: arousal, labelling, evaluation of outcomes.</p>
+
+                        <p>Evaluate the consequences of helping/not helping.</p>
+
+                        <p> Chooses the action with lowest costs = reduces personal distress.</p>
+
+                        <p>Empathy costs (feeling of stress – not helping).</p>
+
+                        <p><strong>Personal Costs</strong> - Blame, and even penance when it is legally clear that a bystander failed to do his or her civic duty - when there are a lot of other bystanders, these last costs are less and therefore there are fewer reasons to help.</p>
+
+                        <h5 class="page-header">Bystander Effect</h5>
+
+                        <p><strong>Diffusion of Responsibility</strong> - The presence of others make each person feel less responsible for the outcomes.</p>
+
+                        <p><strong>Pluralistic Ignorance</strong> - Assuming that no one in the group perceives things as we do.</p>
+
+                        <p><strong>Social Loafing</strong> - People working in groups feel less responsible for the outcomes of a project than they do when working alone.</p>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+        
+        <!-- End Content -->
+
+        <div class="coloured-triangle-bg valign-wrapper z-depth-1 padme">
+        
+            <div class="fat-container">
+            
+                <h3>Resources</h3>
+            
+            </div>
+        
+        </div>
+        
+        <!-- Selector -->
+        
+        <br>
+        
+        <div class="fat-container z-depth-1 center padme">
+            
+            <div class="row">
+
+                <ul class="tabs grey darken-2">
+
+                    <li class="tab col s6"><a class="active" href="#Videos">Videos</a></li>
+
+                    <li class="tab col s6"><a href="#Websites">Websites</a></li>
+
+                </ul>
+
+                <div class="divider"></div>
+                
+            </div>
+        
+            <div id="Videos">
+
+                <ul class="collapsible popout">
+
+                    <li>
+                        <div class="collapsible-header grey darken-2"><i class="material-icons">ondemand_video</i>First</div>
+                        <div class="collapsible-body">
+                        
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header grey darken-2"><i class="material-icons">ondemand_video</i>Second</div>
+                        
+                        <div class="collapsible-body">
+                            
+                            <iframe width="100%" height="315"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </li>
+
+                </ul>
+
+            </div>
+        
+            <div class="fat-container z-depth-1" id="Websites">
+        
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">First Link</p>
+
+                    </div>
+
+                </a>
+
+                <div class="divider"></div>
+
+                <a href="">
+
+                    <div class="valign-wrapper" style="padding:10px;">
+
+                        <i class="material-icons">web</i>
+                        <p style="padding-left:10px">Second Link</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+            
+            <br>
+        
+        </div>
+        
+        <br>
+        
+    </body>
+    
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    
+    <script>
+        
+        M.AutoInit();
+    
+    </script>
+    
+</html>
