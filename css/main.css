@@ -44,6 +44,12 @@ strong {
     
 }
 
+.italics {
+    
+    font-style: italic;
+    
+}
+
 .QuizQuestion {
     
     font-weight: bold; 
