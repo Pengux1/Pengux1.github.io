@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/img/ico/favicon.ico">
+        <title>Triangle Test | Graphics Demo</title>
+        
+    </head>
+
+    <body>
+        
+        <style>
+        
+            .tr {
+                width: 30%;
+                padding-bottom: 21.27%; /* = width / 1.41 */
+                position: relative;
+                overflow: hidden;
+            }
+
+            .tr:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #0079C6;
+                transform-origin: 0 100%;
+                transform: rotate(45deg);
+            }
+            
+        </style>
+        
+        <div class="BigTriangle container padme">
+        
+            <div class="row">
+            
+                <div class="col s4">
+                
+                    <div class="tr"></div>
+                
+                </div>
+                
+                <div class="col s4">
+                
+                
+                
+                </div>
+                
+                <div class="col s4">
+                
+                
+                
+                </div>
+            
+            </div>
+            
+        </div>
+        
+    </body>
+    
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    
+    <script>
+        
+        M.AutoInit();
+    
+    </script>
+    
+</html>
+
+        
