@@ -214,6 +214,13 @@ Notes Pages CSS
     font-size-adjust: auto;
 }
 
+#Videos iframe {
+    
+    width: 100%;
+    height: 70vh;
+    
+}
+
 /*******************************
 Notes Pages CSS - Content Title
 *******************************/
